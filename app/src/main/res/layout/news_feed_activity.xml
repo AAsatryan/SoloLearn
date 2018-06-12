@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:background="#ffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arsen.sololearntask.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myToolBar"
+            android:elevation="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+            <FrameLayout
+                android:id="@+id/mySearchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/medium_text_size"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/changeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:background="@null"
+                    android:src="@drawable/change_view" />
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pinedNewsFeed"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_small"
+            android:elevation="11dp">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/newsFeed"
+            android:elevation="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:elevation="21dp"
+            android:padding="@dimen/padding_small"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

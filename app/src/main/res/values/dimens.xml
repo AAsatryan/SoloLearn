@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="news_card_size">175dp</dimen>
+    <dimen name="small_card_size">120dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_middle">20dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="elevation">15dp</dimen>
+    <dimen name="fab_radius">10dp</dimen>
+
+
+    <dimen name="news_title_text_size">20sp</dimen>
+    <dimen name="subtitle_text_size">22sp</dimen>
+    <dimen name="smallest_text_size">12sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+
+</resources>
